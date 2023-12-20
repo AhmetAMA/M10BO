@@ -1,0 +1,19 @@
+@use "./base.scss";
+
+// abstracts
+@use "./abstracts/animations";
+@use "./abstracts/colors";
+@use "./abstracts/mixins";
+@use "./abstracts/vars";
+@use "./abstracts/reset";
+
+// components
+@use "./components/header/header.scss";
+@use "./components/main/main.scss";
+@use "./components/footer/footer.scss";
+
+// andere webpaginas
+
+
+// mediaqueries
+@use "./abstracts/mediaqueries";
