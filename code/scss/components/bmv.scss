@@ -3,15 +3,166 @@
 @use "../abstracts/vars";
 
 .bmv{
-
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+    /*  1e sectie
+    ---------------------------------------------------------------------------------------------------- */
     &__section1{
         padding: 0 10%;
     }
 
+    /*  2e sectie
+    ---------------------------------------------------------------------------------------------------- */
     &__section2{
         padding: 0 10%;
         display: flex;
+        justify-content: space-between;
     }
 
+    /*  Linker kant 2e sectie
+    ---------------------------------------------------------------------------------------------------- */
+    &__article1{
+        width: 35%;
+    }
 
+    /*  Rechter kant 2e sectie
+    ---------------------------------------------------------------------------------------------------- */
+    &__article2{
+        position: relative;
+        width: 50%;
+        // width: 200px;
+        // height: 40rem;
+        // overflow: hidden;
+        z-index: -10;
+    }
+  
+    &__article2::before {
+        content: '';
+        position: absolute;
+        top: -2rem;
+        left: -5rem;
+        width: 120%;
+        height: 105%;
+        transform: rotate(-5deg);
+        background: red;
+        
+        transform-origin: top left;
+        // transform: rotate(45deg);
+    }
+  
+    &__div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        color: white;
+        z-index: 1;
+    }
+
+    &__p{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__span2{
+        font-weight: 800;
+    }
+
+    /*  Slideshow
+    ---------------------------------------------------------------------------------------------------- */
+    &__div2 {
+        display: none
+    }
+
+    &__slideshow-img {
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    &__div3 {
+        max-width: 100rem;
+        position: relative;
+    }
+
+    &__a4{
+        text-decoration: none;
+    }
+
+    &__a, &__a2 {
+        position: absolute;
+        width: auto;
+        top: 45%;
+        border-radius: 0 0.3rem 0.3rem 0;
+        padding: 1.5rem;
+        font-weight: bolder;
+        font-size: 2rem;
+        color: white;
+        // background-color: red;
+
+        cursor: pointer;
+        transition: 0.6s ease;
+        // user-select: none;
+    }
+
+    &__a2 {
+        right: 0;
+        border-radius: 0.3rem 0 0 0.3rem;
+    }
+
+    &__a:hover, &__a2:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    &__div4 {
+        position: absolute;
+        width: 90%;
+        bottom: 2rem;
+        padding: 1rem 1.5rem;
+        color: white;
+        background-color: red;
+    }
+
+    &__a3{
+        text-decoration: none;
+        font-size: 90%;
+        color: white;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__div5{
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    &__span {
+        width: 3rem;
+        height: 1rem;
+        border: 0.2rem solid darkgray;
+        display: inline-block;
+        background-color: lightgray;
+        
+        cursor: pointer;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, &__span:hover {
+        background-color: black;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    /*  3e sectie
+    ---------------------------------------------------------------------------------------------------- */
 }
