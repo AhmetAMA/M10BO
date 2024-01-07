@@ -3,7 +3,18 @@
 @use "./abstracts/vars";
 
 body{
-    // font-family: vars.$font-family;
-    // color: colors.$Grey;
-    // background-color: colors.$DarkGrey;
+    font-family: vars.$font-family;
+}
+
+main{
+    min-height: 43vh;
+    padding: 5rem 0;
+}
+
+h1{
+    font-size: 180%;
+}
+
+h4{
+    font-size: 100%;
 }
