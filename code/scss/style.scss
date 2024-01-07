@@ -8,9 +8,9 @@
 @use "./abstracts/reset";
 
 // components
-@use "./components/header/header.scss";
-@use "./components/main/main.scss";
-@use "./components/footer/footer.scss";
+@use "./components/header.scss";
+@use "./components/bmv.scss";
+@use "./components/footer.scss";
 
 // andere webpaginas
 
