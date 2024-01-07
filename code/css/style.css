@@ -1,17 +1,198 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 11 | @use "./components/header/header.scss";
- *    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\style.scss 11:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 11 \2502  @use \"./components/header/header.scss\";\d\a    \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\style.scss 11:1  root stylesheet";
+body {
+  font-family: "Roboto", sans-serif;
 }
+
+main {
+  min-height: 43vh;
+  padding: 5rem 0;
+}
+
+h1 {
+  font-size: 180%;
+}
+
+h4 {
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+}
+
+.header {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 -0.2rem 1rem 0 black;
+  /*  1st part of header
+  ---------------------------------------------------------------------------------------------------- */
+  /*  2nd part of header
+  ---------------------------------------------------------------------------------------------------- */
+  /*  Navigatie
+  ---------------------------------------------------------------------------------------------------- */
+  /*  Searchbar
+  ---------------------------------------------------------------------------------------------------- */
+}
+.header__div1 {
+  height: 15rem;
+  padding: 0 10%;
+  border-bottom: 0.1rem solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(70deg, white 30%, red 0rem);
+}
+.header__img {
+  height: 75%;
+  border-radius: 1rem;
+}
+.header__h1 {
+  color: white;
+}
+.header__a2 {
+  position: relative;
+  padding: 1.4rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.header__a2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.3rem;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease;
+}
+.header__a2:hover::after {
+  transform: scale(1, 1);
+}
+.header__div2 {
+  height: 5rem;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(222, 0, 0);
+}
+.header__ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+.header__a {
+  text-decoration: none;
+  color: white;
+}
+.header__li {
+  position: relative;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 85%;
+  font-weight: bold;
+}
+.header__li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.3rem;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease;
+}
+.header__li:hover::after {
+  transform: scale(1, 1);
+}
+.header__div3 {
+  height: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.header__div3::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.3rem;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease;
+}
+.header__div3:hover::after {
+  transform: scale(1, 1);
+}
+.header__div3 > i {
+  color: white;
+}
+
+.bmv__section1 {
+  padding: 0 10%;
+}
+.bmv__section2 {
+  padding: 0 10%;
+  display: flex;
+}
+
+.footer {
+  width: 100%;
+  min-height: 20rem;
+  padding: 2rem 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: red;
+  box-shadow: 0 0.2rem 1rem 0 black;
+}
+.footer > article {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+.footer > article > h4 {
+  margin-bottom: 0.5rem;
+}
+.footer > article > p {
+  margin-bottom: 0.5rem;
+  font-size: 85%;
+}
+.footer > article > a {
+  font-size: 90%;
+  font-weight: bold;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
