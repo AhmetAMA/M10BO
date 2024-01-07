@@ -1,0 +1,17 @@
+@use "../abstracts/colors";
+@use "../abstracts/mixins";
+@use "../abstracts/vars";
+
+.bmv{
+
+    &__section1{
+        padding: 0 10%;
+    }
+
+    &__section2{
+        padding: 0 10%;
+        display: flex;
+    }
+
+
+}
