@@ -1,3 +1,11 @@
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -9,6 +17,10 @@ main {
 
 h1 {
   font-size: 180%;
+}
+
+h2 {
+  font-size: 150%;
 }
 
 h4 {
@@ -157,12 +169,137 @@ body {
   color: white;
 }
 
+.bmv {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  /*  1e sectie
+  ---------------------------------------------------------------------------------------------------- */
+  /*  2e sectie
+  ---------------------------------------------------------------------------------------------------- */
+  /*  Linker kant 2e sectie
+  ---------------------------------------------------------------------------------------------------- */
+  /*  Rechter kant 2e sectie
+  ---------------------------------------------------------------------------------------------------- */
+  /*  Slideshow
+  ---------------------------------------------------------------------------------------------------- */
+  /*  3e sectie
+  ---------------------------------------------------------------------------------------------------- */
+}
 .bmv__section1 {
   padding: 0 10%;
 }
 .bmv__section2 {
   padding: 0 10%;
   display: flex;
+  justify-content: space-between;
+}
+.bmv__article1 {
+  width: 35%;
+}
+.bmv__article2 {
+  position: relative;
+  width: 50%;
+  z-index: -10;
+}
+.bmv__article2::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: -5rem;
+  width: 120%;
+  height: 105%;
+  transform: rotate(-5deg);
+  background: red;
+  transform-origin: top left;
+}
+.bmv__div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+  z-index: 1;
+}
+.bmv__p {
+  display: flex;
+  flex-direction: column;
+}
+.bmv__span2 {
+  font-weight: 800;
+}
+.bmv__div2 {
+  display: none;
+}
+.bmv__slideshow-img {
+  vertical-align: middle;
+  width: 100%;
+}
+.bmv__div3 {
+  max-width: 100rem;
+  position: relative;
+}
+.bmv__a4 {
+  text-decoration: none;
+}
+.bmv__a, .bmv__a2 {
+  position: absolute;
+  width: auto;
+  top: 45%;
+  border-radius: 0 0.3rem 0.3rem 0;
+  padding: 1.5rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+.bmv__a2 {
+  right: 0;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+.bmv__a:hover, .bmv__a2:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.bmv__div4 {
+  position: absolute;
+  width: 90%;
+  bottom: 2rem;
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: red;
+}
+.bmv__a3 {
+  text-decoration: none;
+  font-size: 90%;
+  color: white;
+}
+.bmv__a3:hover {
+  text-decoration: underline;
+}
+.bmv__div5 {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.bmv__span {
+  width: 3rem;
+  height: 1rem;
+  border: 0.2rem solid darkgray;
+  display: inline-block;
+  background-color: lightgray;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+.bmv .active, .bmv__span:hover {
+  background-color: black;
+}
+.bmv .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 .footer {
@@ -193,6 +330,12 @@ body {
   font-size: 90%;
   font-weight: bold;
   color: white;
+}
+
+@media only screen and (max-width: 300px) {
+  .bmv__a, .bmv__a2, .bmv__div4 {
+    font-size: 11px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
