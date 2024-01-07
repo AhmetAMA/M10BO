@@ -3,3 +3,8 @@
 @use "./vars";
 @use "./mixins";
 
+@media only screen and (max-width: 300px) {
+    .bmv__a, .bmv__a2,.bmv__div4 {
+        font-size: 11px
+    }
+}
