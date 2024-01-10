@@ -5,7 +5,7 @@
 .bmv{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 7.5rem;
     
     /*  1e sectie
     ---------------------------------------------------------------------------------------------------- */
@@ -27,49 +27,6 @@
         width: 35%;
     }
 
-    /*  Rechter kant 2e sectie
-    ---------------------------------------------------------------------------------------------------- */
-    &__article2{
-        position: relative;
-        width: 50%;
-        // width: 200px;
-        // height: 40rem;
-        // overflow: hidden;
-        z-index: -10;
-    }
-  
-    &__article2::before {
-        content: '';
-        position: absolute;
-        top: -2rem;
-        left: -5rem;
-        width: 120%;
-        height: 105%;
-        transform: rotate(-5deg);
-        background: red;
-        
-        transform-origin: top left;
-        // transform: rotate(45deg);
-    }
-  
-    &__div {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        color: white;
-        z-index: 1;
-    }
-
-    &__p{
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__span2{
-        font-weight: 800;
-    }
-
     /*  Slideshow
     ---------------------------------------------------------------------------------------------------- */
     &__div2 {
@@ -79,11 +36,20 @@
     &__slideshow-img {
         vertical-align: middle;
         width: 100%;
+        border-radius: 0.5rem;
+
+        &:hover{
+            transform: scale(1.03);
+            transition-duration: 0.3s;
+        }
     }
 
     &__div3 {
-        max-width: 100rem;
         position: relative;
+        max-width: 100rem;
+        box-shadow: 0.1rem 0.1rem 0.4rem 0.1rem black;
+        overflow: hidden;
+        border-radius: 0.5rem;
     }
 
     &__a4{
@@ -163,6 +129,87 @@
         animation-duration: 1.5s;
     }
 
+    /*  Rechter kant 2e sectie
+    ---------------------------------------------------------------------------------------------------- */
+    &__article2{
+        position: relative;
+        width: 50%;
+        // width: 200px;
+        // height: 40rem;
+        // overflow: hidden;
+        z-index: -10;
+    }
+  
+    &__article2::before {
+        content: '';
+        position: absolute;
+        top: -2rem;
+        left: -5rem;
+        width: 120%;
+        height: 105%;
+        transform: rotate(-5deg);
+        background: red;
+        
+        transform-origin: top left;
+        // transform: rotate(45deg);
+    }
+  
+    &__div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        color: white;
+        z-index: 1;
+    }
+
+    &__p{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__span2{
+        font-weight: 800;
+    }
+
     /*  3e sectie
     ---------------------------------------------------------------------------------------------------- */
+    &__section3{
+        // width: 100%;
+        // height: 10rem;
+        padding: 0 10%;
+        display: flex;
+        justify-content: space-between;
+        // background-color: red;
+    }
+
+    &__a5{
+        position: relative;
+        padding: 1.4rem 3rem;
+        @include mixins.flexCenter;
+        // font-size: 100%;
+    	font-weight: bold;
+        text-decoration: none;
+        color: black;
+
+        cursor: pointer;
+
+    }
+    
+    &__a5::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.3rem;
+        left: 0;
+        bottom: 0;
+        background-color: red;
+        transform: scale(0, 1);
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease;
+    }
+
+    &__a5:hover::after{
+        transform: scale(1, 1);
+    }
 }
