@@ -23,6 +23,12 @@
         background: linear-gradient(70deg, white 30%, red 0rem);
     }
 
+    &__a3{
+        height: 100%;
+        @include mixins.flexCenter;
+        text-decoration: none;
+    }
+
     &__img{
         // width: 15rem;
         // height: 11rem;
@@ -30,10 +36,8 @@
         border-radius: 1rem;
     }
 
-    &__div4{
-        // width: 4rem;
-        // height: 4rem;
-        // background-color: blue;
+    &__a4{
+        text-decoration: none;
     }
 
     &__h1{
