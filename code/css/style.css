@@ -66,9 +66,19 @@ body {
   align-items: center;
   background: linear-gradient(70deg, white 30%, red 0rem);
 }
+.header__a3 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
 .header__img {
   height: 75%;
   border-radius: 1rem;
+}
+.header__a4 {
+  text-decoration: none;
 }
 .header__h1 {
   color: white;
@@ -172,16 +182,16 @@ body {
 .bmv {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 7.5rem;
   /*  1e sectie
   ---------------------------------------------------------------------------------------------------- */
   /*  2e sectie
   ---------------------------------------------------------------------------------------------------- */
   /*  Linker kant 2e sectie
   ---------------------------------------------------------------------------------------------------- */
-  /*  Rechter kant 2e sectie
-  ---------------------------------------------------------------------------------------------------- */
   /*  Slideshow
+  ---------------------------------------------------------------------------------------------------- */
+  /*  Rechter kant 2e sectie
   ---------------------------------------------------------------------------------------------------- */
   /*  3e sectie
   ---------------------------------------------------------------------------------------------------- */
@@ -197,47 +207,24 @@ body {
 .bmv__article1 {
   width: 35%;
 }
-.bmv__article2 {
-  position: relative;
-  width: 50%;
-  z-index: -10;
-}
-.bmv__article2::before {
-  content: "";
-  position: absolute;
-  top: -2rem;
-  left: -5rem;
-  width: 120%;
-  height: 105%;
-  transform: rotate(-5deg);
-  background: red;
-  transform-origin: top left;
-}
-.bmv__div {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  color: white;
-  z-index: 1;
-}
-.bmv__p {
-  display: flex;
-  flex-direction: column;
-}
-.bmv__span2 {
-  font-weight: 800;
-}
 .bmv__div2 {
   display: none;
 }
 .bmv__slideshow-img {
   vertical-align: middle;
   width: 100%;
+  border-radius: 0.5rem;
+}
+.bmv__slideshow-img:hover {
+  transform: scale(1.03);
+  transition-duration: 0.3s;
 }
 .bmv__div3 {
-  max-width: 100rem;
   position: relative;
+  max-width: 100rem;
+  box-shadow: 0.1rem 0.1rem 0.4rem 0.1rem black;
+  overflow: hidden;
+  border-radius: 0.5rem;
 }
 .bmv__a4 {
   text-decoration: none;
@@ -300,6 +287,121 @@ body {
 .bmv .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+}
+.bmv__article2 {
+  position: relative;
+  width: 50%;
+  z-index: -10;
+}
+.bmv__article2::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: -5rem;
+  width: 120%;
+  height: 105%;
+  transform: rotate(-5deg);
+  background: red;
+  transform-origin: top left;
+}
+.bmv__div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+  z-index: 1;
+}
+.bmv__p {
+  display: flex;
+  flex-direction: column;
+}
+.bmv__span2 {
+  font-weight: 800;
+}
+.bmv__section3 {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.bmv__a5 {
+  position: relative;
+  padding: 1.4rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.bmv__a5::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.3rem;
+  left: 0;
+  bottom: 0;
+  background-color: red;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease;
+}
+.bmv__a5:hover::after {
+  transform: scale(1, 1);
+}
+
+.organisatie__section {
+  padding: 0 10%;
+}
+.organisatie__section2 {
+  margin: 5rem 0;
+  padding: 5rem 10%;
+  color: white;
+  background-color: red;
+}
+.organisatie__article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.organisatie__h1 {
+  margin-bottom: 2rem;
+}
+.organisatie__p {
+  display: flex;
+  flex-direction: column;
+}
+.organisatie__span {
+  font-weight: bold;
+}
+.organisatie__ul {
+  margin-left: 2rem;
+  list-style: square;
+}
+
+.projecten__section1 {
+  padding: 0 10%;
+}
+.projecten__section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.projecten__article {
+  width: 23%;
+  height: 40rem;
+  background-color: red;
+}
+
+.werken__article {
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.werken__h1 {
+  margin-bottom: 2rem;
 }
 
 .footer {
