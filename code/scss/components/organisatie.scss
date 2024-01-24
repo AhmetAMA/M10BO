@@ -30,6 +30,10 @@
         flex-direction: column;
     }
 
+    &__p:nth-child(7){
+        flex-direction: row;
+    }
+
     &__span{
         font-weight: bold;
     }
