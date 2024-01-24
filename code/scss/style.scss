@@ -10,14 +10,13 @@
 // components
 @use "./components/header.scss";
 @use "./components/bmv.scss";
+@use "./components/footer.scss";
+
+// andere webpaginas
 @use "./components/organisatie.scss";
 @use "./components/projecten.scss";
 @use "./components/project.scss";
 @use "./components/werken.scss";
-@use "./components/footer.scss";
-
-// andere webpaginas
-
 
 // mediaqueries
 @use "./abstracts/mediaqueries";
