@@ -3,8 +3,126 @@
 @use "./vars";
 @use "./mixins";
 
-@media only screen and (max-width: 300px) {
-    .bmv__a, .bmv__a2,.bmv__div4 {
-        font-size: 11px
+/*  750px - 1000px begin
+---------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1000px) {
+
+    h1{
+        font-size: 105%;
+    }
+
+    .header{
+
+        &__img{
+            height: 50%;
+        }
+
+        &__a2{
+            padding: 1rem 2rem;
+            font-size: 75%;
+        }
+
+        &__ul{
+            gap: 1.5rem;
+        }
+
+        &__li{
+            padding: 0.5rem 1rem;
+            font-size: 60%;
+        }
     }
 }
+
+/*  750px - 1000px eind
+---------------------------------------------------------------------------------------------------- */
+
+
+/*  500px - 750px begin
+---------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 750px) {
+
+    h1{
+        font-size: 85%;
+    }
+
+    .header{
+        height: 10rem;
+
+        &__div1{
+            height: 10rem;
+            padding: 0 5%;
+        }
+
+        &__img{
+            border-radius: 0;
+        }
+
+        &__a2{
+            display: none;
+        }
+
+        &__div2{
+            display: none;
+        }
+
+        &__a-bars{
+            display: block;
+        }
+    }
+
+    .bmv{
+
+        &__section2{
+            align-items: center;
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        &__article1{
+            width: 100%;
+        }
+    }
+}
+
+/*  500px - 750px eind
+---------------------------------------------------------------------------------------------------- */
+
+
+/*  350px - 500px begin
+---------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 500px) {
+
+    h1{
+        font-size: 55%;
+    }
+
+    .header{
+        height: 10rem;
+
+        &__img{
+            font-size: 40%;
+        }
+
+        &__div2{
+            display: none;
+        }
+
+        &__a-bars{
+            font-size: 80%;
+        }
+
+        &__ul2{
+            gap: 1rem;
+        }
+
+        &__li::after{
+            height: 0.2rem;
+        }
+    }
+}
+
+/*  350px - 500px eind
+---------------------------------------------------------------------------------------------------- */
