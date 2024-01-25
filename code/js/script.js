@@ -1,14 +1,20 @@
 /*  Hamburger Menu
 ---------------------------------------------------------------------------------------------------- */
 function hamburgerMenu() {
-    
     var x = document.getElementById("myLinks");
-    
+    var y = document.getElementById("searchBar");
+
     if (x.style.display === "block") {
         x.style.display = "none";
     } else {
         x.style.display = "block";
     }
+
+    if (y.style.display === "none") {
+        y.style.display = "flex";
+    } else {
+        y.style.display = "none";
+    }    
 }
 
 
