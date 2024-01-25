@@ -4,24 +4,6 @@
 
 .project{
 
-    // &__section{
-    //     // height: 40rem;
-    //     padding: 0 10%;
-    //     // overflow: hidden;
-    //     float: left;
-    // }
-
-    // &__p{
-    //     background-color: red;
-    //     padding: 2rem;
-    // }
-
-    // &__img{
-    //     // width: 100%;
-    //     float: left;
-    //     background-color: none;
-    // }
-
     &__section{
         padding: 0 10%;
         display: flex;
@@ -33,32 +15,33 @@
     }
 
     &__article1{
+        width: 70%;
         padding: 2rem 0;
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        // background-color: green;
     }
 
-    &__article1 > h2{
+    &__h2{
         margin-bottom: 1rem;
     }
 
     &__article2{
-        height: 70rem;
+        height: 60rem;
+        width: 100%;
         padding: 2rem;
         margin-top: 5rem;
         display: flex;
         gap: 3rem;
+        border-radius: 1rem;
         overflow: hidden;
-        background-color: red;
+        background-color: rgb(255, 245, 245);
+        box-shadow: 0.2rem 0.2rem 0.5rem 0 black;
     }
 
     &__container{
         position: relative;
-        // display: none;
         width: 80%;
-        // padding: 1rem;
     }
     
     #mediaContainer {
@@ -69,6 +52,7 @@
     &__container-img, &__container-video{
         width: 100%;
         height: 100%;
+        border-radius: 1rem;
     }
 
     &__container-video {
@@ -79,14 +63,17 @@
 
     &__img-text{
         position: absolute;
-        bottom: 15px;
-        left: 15px;
+        bottom: 0;
+        left: 0;
+        padding: 1rem 2rem;
+        font-size: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
         color: white;
-        font-size: 20px;
     }
 
     &__row{
         width: 20%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -101,6 +88,10 @@
 
     &__column{
 
+    }
+
+    &__column, img, video{
+        border-radius: 1rem;
     }
 
     &__column > img{

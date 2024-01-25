@@ -137,7 +137,7 @@
     }
 
     &__div4{
-        padding: 2rem;
+        // padding: 2rem;
         display: none;
         background-color: rgb(222, 0, 0);
         z-index: 1;
@@ -148,6 +148,34 @@
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
+    }
+
+    &__ul2 > &__a{
+        width: 100%;
+        padding: 1rem;
+        @include mixins.flexCenter;
+    }
+
+    &__ul2 > &__a:hover{
+        background-color: rgb(175, 0, 0);
+        box-shadow: 0 0 0.3rem 0 black;
+    }
+
+    &__ul2 > &__a > &__li{
+        position: unset;
+    }
+
+    &__ul2 > &__a > &__li:after{
+        content: none;
+        position: unset;
+        width: 100%;
+        height: 100%;
+        left: unset;
+        bottom: unset;
+        background-color: unset;
+        transform: none;
+        transform-origin: unset;
+        transition: none;
     }
 
 
