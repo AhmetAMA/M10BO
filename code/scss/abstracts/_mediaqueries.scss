@@ -3,13 +3,165 @@
 @use "./vars";
 @use "./mixins";
 
+/*  1000px - 1500px begin
+---------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1500px) {
+
+    h1{
+        font-size: 145%;
+    }
+
+    h2{
+        font-size: 125%;
+    }
+
+    h4{
+        font-size: 100%;
+    }
+
+    .header{
+
+        &__a3{
+            height: 85%;
+        }
+
+        &__img{
+            font-size: 60%;
+        }
+        
+        &__ul{
+            gap: 2rem;
+        }
+
+        &__li{
+            font-size: 65%;
+        }
+    }
+
+    .bmv{
+
+        &__article2::before{
+            height: 120%;
+        }
+
+        &__p{
+            font-size: 90%;
+        }
+    }
+
+    //////
+    ////// Werken bij
+
+    .werken{
+
+        &__h1{
+            font-size: 165%;
+        }
+
+        &__p{
+            font-size: 90%;
+        }
+    }
+
+    //////
+    ////// Organisatie
+
+    .organisatie{
+
+        &__h1{
+            font-size: 165%;
+        }
+
+        &__p{
+            font-size: 90%;
+        }
+    }
+
+    //////
+    ////// Projecten
+
+    .projecten{
+
+        &__h1{
+            font-size: 165%;
+        }
+
+        &__a{
+            width: 28%;
+        }
+    }
+
+    //////
+    ////// Project
+
+    .project{
+
+        &__h2{
+            font-size: 140%;
+        }
+
+        &__p{
+            font-size: 80%;
+        }
+
+        &__a{
+            font-size: 85%;
+        }
+
+        .project__article2 {
+            height: 48rem;
+        }
+    }
+}
+
+/*  1000px - 1500px eind
+---------------------------------------------------------------------------------------------------- */
+
+/*  1000px - 1250px begin (projecten)
+---------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1250px){
+    //////
+    ////// Projecten
+
+    .projecten{
+
+        &__a{
+            width: 40%;
+        }
+    }
+
+    //////
+    ////// Project
+
+    .project{
+
+        .project__article2 {
+            height: 38rem;
+        }
+    }
+}
+
+/*  1000px - 1250px begin (projecten)
+---------------------------------------------------------------------------------------------------- */
+
+
 /*  750px - 1000px begin
 ---------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 1000px) {
 
     h1{
+        font-size: 115%;
+    }
+
+    h2{
         font-size: 105%;
+    }
+
+    h4{
+        font-size: 75%;
     }
 
     .header{
@@ -32,6 +184,157 @@
             font-size: 60%;
         }
     }
+
+    .bmv{
+        gap: 5rem;
+
+        &__section2{
+            align-items: center;
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        &__article1{
+            width: 85%;
+        }
+
+        &__article2{
+            margin-top: 5rem;
+            width: 75%;
+        }
+
+        &__article2::before{
+            top: -5rem;
+            height: 130%;
+            transform-origin: unset;
+        }
+
+        &__p{
+            font-size: 85%;
+        }
+
+        &__section3{
+            margin-top: 5rem;
+        }
+
+        &__a5{
+            padding: 1rem 2.5rem;
+            font-size: 75%;
+        }
+    }
+
+    .footer{
+
+        & > article > p{
+            font-size: 60%;
+        }
+
+        & > article > a{
+            font-size: 65%;
+        }
+    }
+
+    //////
+    ////// Werken bij
+
+    .werken{
+
+        &__h1{
+            font-size: 145%;
+        }
+
+        &__h2{
+            font-size: 115%;
+        }
+
+        &__p{
+            font-size: 85%;
+        }
+    }
+    
+    //////
+    ////// Organisatie
+
+    .organisatie{
+
+        &__h1{
+            font-size: 145%;
+        }
+
+        &__h2{
+            font-size: 115%;
+        }
+
+        &__p{
+            font-size: 85%;
+        }
+
+        &__li{
+            font-size: 85%;
+        }
+    }
+
+    //////
+    ////// Projecten
+
+    .projecten{
+
+        &__h1{
+            font-size: 145%;
+        }
+
+        &__a{
+            width: 45%;
+        }
+
+        &__h41{
+            font-size: 85%;
+        }
+
+        &__p{
+            font-size: 70%;
+        }
+
+        &__div3{
+            font-size: 85%;
+        }
+    }
+
+    //////
+    ////// Project
+
+    .project{
+
+        &__h2{
+            font-size: 120%;
+        }
+
+        &__p{
+            font-size: 70%;
+        }
+
+        &__a{
+            font-size: 80%;
+        }
+
+        .project__article2 {
+            height: 29rem;
+            margin-top: 2rem;
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        &__column, img, video{
+            border-radius: 0.5rem;
+        }
+        &__container-img, &__container-video{
+            border-radius: 0.5rem;
+        }
+
+        &__img-text{
+            font-size: 60%;
+        }
+    }
 }
 
 /*  750px - 1000px eind
@@ -44,7 +347,11 @@
 @media screen and (max-width: 750px) {
 
     h1{
-        font-size: 85%;
+        font-size: 90%;
+    }
+    
+    h2{
+        font-size: 75%;
     }
 
     .header{
@@ -53,6 +360,7 @@
         &__div1{
             height: 10rem;
             padding: 0 5%;
+            background: linear-gradient(70deg, white 25%, red 0rem);
         }
 
         &__img{
@@ -64,7 +372,16 @@
         }
 
         &__div2{
+            padding: 0 5%;
+            justify-content: end;
+        }
+
+        &__ul{
             display: none;
+        }
+
+        &__div3 > i{
+            padding: 1rem;
         }
 
         &__a-bars{
@@ -72,16 +389,161 @@
         }
     }
 
+    main{
+        margin-top: 3rem;
+    }
+
     .bmv{
 
-        &__section2{
-            align-items: center;
-            flex-direction: column;
-            gap: 5rem;
+        &__section1{
+            padding: 0 5%;
         }
 
-        &__article1{
-            width: 100%;
+        &__section2{
+            padding: 0 5%;
+        }
+
+        &__article2::before{
+            left: -4rem;
+            width: 125%;
+        }
+
+        &__p{
+            font-size: 70%;
+        }
+
+        &__section3{
+            padding: 0 5%;
+            margin-top: 3rem;
+        }
+
+        &__a5{
+            padding: 1rem 1.5rem;
+            font-size: 60%;
+        }
+
+        &__a5::after{
+            height: 0.2rem;
+        }
+    }
+    
+    .footer{
+        padding: 2rem 5%;
+        row-gap: 5rem;
+
+        & > article{
+            width: 45%;
+            gap: 0.5rem;
+        }
+    }
+
+    //////
+    ////// Werken bij
+
+    .werken{
+
+        &__article{
+            padding: 0 5%;
+        }
+
+        &__h1{
+            font-size: 125%;
+            margin-bottom: 1rem;
+        }
+
+        &__h2{
+            font-size: 105%;
+        }
+
+        &__p{
+            font-size: 85%;
+        }
+    }
+
+    //////
+    ////// Organisatie
+
+    .organisatie{
+
+        &__section{
+            padding: 0 5%;
+        }
+
+        &__section2{
+            padding: 5rem 5%;
+        }
+
+        &__section3{
+            padding: 0 5%;
+        }
+
+        &__h1{
+            font-size: 125%;
+            margin-bottom: 1rem;
+        }
+
+        &__h2{
+            font-size: 105%;
+        }
+
+        &__p{
+            font-size: 85%;
+        }
+
+        &__li{
+            font-size: 85%;
+        }
+    }
+
+    //////
+    ////// Projecten
+
+    .projecten{
+
+        &__h1{
+            font-size: 125%;
+        }
+
+        &__section2{
+            justify-content: center;
+        }
+
+        &__a{
+            width: 65%;
+        }
+    }
+
+    /////
+    ////// Project
+
+    .project{
+
+        &__h2{
+            font-size: 120%;
+        }
+
+        &__p{
+            font-size: 70%;
+        }
+
+        &__a{
+            font-size: 75%;
+        }
+
+        .project__article2 {
+            height: 20rem;
+        }
+
+        &__column, img, video{
+            border-radius: 0.5rem;
+        }
+        &__container-img, &__container-video{
+            border-radius: 0.5rem;
+        }
+
+        &__img-text{
+            padding: 1rem;
+            font-size: 50%;
         }
     }
 }
@@ -96,18 +558,30 @@
 @media screen and (max-width: 500px) {
 
     h1{
-        font-size: 55%;
+        font-size: 60%;
+    }
+
+    h2{
+        font-size: 52%;
+    }
+
+    h4{
+        font-size: 65%;
     }
 
     .header{
         height: 10rem;
 
-        &__img{
-            font-size: 40%;
+        &__div1{
+            background: linear-gradient(70deg, white 30%, red 0rem);
         }
 
-        &__div2{
-            display: none;
+        &__a3{
+            height: 80%;
+        }
+
+        &__img{
+            font-size: 40%;
         }
 
         &__a-bars{
@@ -118,8 +592,196 @@
             gap: 1rem;
         }
 
+        .header__ul2 > .header__a {
+            padding: 0.5rem;
+        }
+
+        &__ul2 > &__a > &__li{
+            font-size: 50%;
+        }
+
         &__li::after{
             height: 0.2rem;
+        }
+    }
+
+    .bmv{
+
+        &__div4{
+            width: 80%;
+            padding: 0.5rem 1rem;
+        }
+
+        &__a3{
+            font-size: 75%;
+        }
+
+        .bmv__a, .bmv__a2 {
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .bmv__span {
+            width: 2rem;
+            height: 0.8rem;
+        }
+
+        &__article2{
+            margin-top: 2rem;
+        }
+
+        &__article2::before{
+            left: -3rem;
+            // width: 125%;
+            top: -4rem;
+            height: 140%;
+        }
+
+        &__div{
+            gap: 1rem;
+        }
+
+        &__p{
+            font-size: 50%;
+        }
+
+        &__section3{
+            margin-top: 2rem;
+        }
+
+        &__a5{
+            padding: 0.5rem 1rem;
+            font-size: 50%;
+        }
+    }
+
+    .footer{
+
+        & > article > p{
+            font-size: 55%;
+        }
+
+        & > article > a{
+            font-size: 60%;
+        }
+    }
+    
+    //////
+    ////// Werken bij
+
+    .werken{
+
+        &__h1{
+            font-size: 105%;
+            margin-bottom: 0;
+        }
+
+        &__h2{
+            font-size: 85%;
+        }
+
+        &__p{
+            font-size: 70%;
+        }
+    }
+
+    //////
+    ////// Organisatie
+
+    .organisatie{
+
+        &__h1{
+            font-size: 105%;
+            margin-bottom: 0;
+        }
+
+        &__h2{
+            font-size: 85%;
+        }
+
+        &__p{
+            font-size: 70%;
+        }
+
+        &__li{
+            font-size: 70%;
+        }
+    }
+
+    //////
+    ////// Projecten
+
+    .projecten{
+
+        &__h1{
+            font-size: 105%;
+        }
+
+        &__div2{
+            padding: 1.5rem 1rem;
+        }
+
+        &__div4{
+            margin-top: 0;
+            gap: 1rem;
+        }
+
+        &__h41{
+            font-size: 60%;
+        }
+
+        &__p{
+            font-size: 50%;
+        }
+
+        &__div3{
+            font-size: 65%;
+        }
+    }
+
+    /////
+    ////// Project
+
+    .project{
+
+        &__article1{
+            gap: 1rem;
+        }
+
+        &__h2{
+            font-size: 85%;
+            margin-bottom: 0;
+        }
+
+        &__h5{
+            font-size: 65%;
+        }
+
+        &__p{
+            font-size: 50%;
+        }
+
+        &__a{
+            font-size: 55%;
+        }
+
+        .project__article2 {
+            height: 13.5rem;
+            margin-top: 0;
+            padding: 0.5rem;
+            gap: 0.5rem;
+        }
+
+        &__column, img, video{
+            border-radius: 0.3rem;
+        }
+        &__container-img, &__container-video{
+            border-radius: 0.3em;
+        }
+
+        &__img-text{
+            padding: 0.5rem;
+            font-size: 45%;
         }
     }
 }
