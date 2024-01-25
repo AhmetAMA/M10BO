@@ -863,6 +863,9 @@ body {
   .bmv__section1 {
     padding: 0 5%;
   }
+  .bmv__h1 {
+    font-size: 100%;
+  }
   .bmv__section2 {
     padding: 0 5%;
   }
@@ -999,6 +1002,9 @@ body {
   }
   .header__li::after {
     height: 0.2rem;
+  }
+  .bmv__h1 {
+    font-size: 80%;
   }
   .bmv__div4 {
     width: 80%;
